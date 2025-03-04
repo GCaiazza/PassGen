@@ -17,7 +17,7 @@
 
 ## Panoramica
 
-**SecPassGen** è uno strumento pensato per generare dizionari di password, utile in ambito di *penetration testing* e sicurezza informatica.  
+**PassGen** è uno strumento pensato per generare dizionari di password, utile in ambito di *penetration testing* e sicurezza informatica.  
 Questo programma si basa sull’idea che molti utenti scelgono password facili da ricordare, spesso legate a nomi e informazioni personali (ad esempio, date di nascita). Partendo da queste informazioni e applicando diverse trasformazioni (sostituzioni, variazioni di maiuscole/minuscole, aggiunta di caratteri speciali e integrazione di date), SecPassGen crea un elenco di possibili password salvandole in un file di testo.
 
 ---
@@ -75,8 +75,8 @@ SecPassGen sfrutta questi dati: conoscendo abitudini e informazioni personali di
 
 1. **Clonare il repository GitHub**  
    ```bash
-   git clone https://github.com/GCaiazza/SecPassGen.git
-   cd SecPassGen
+   git clone https://github.com/GCaiazza/PassGen.git
+   cd PassGen
 
 	2.	Creare e attivare un ambiente virtuale (opzionale ma consigliato)
 
@@ -97,19 +97,19 @@ python main.py
 
 
 	2.	Step 1 – Parole Chiave
-	•	Inserire le parole chiave (una alla volta).
-	•	Premere CTRL+C quando si è terminato (se almeno una parola è stata inserita) o per uscire (se nessuna parola è stata inserita).
+	  •	Inserire le parole chiave (una alla volta).
+	  •	Premere CTRL+C quando si è terminato (se almeno una parola è stata inserita) o per uscire (se nessuna parola è stata inserita).
 	3.	Step 2 – Date
-	•	Per ogni parola chiave, il programma chiederà di inserire facoltativamente giorno, mese e anno.
-	•	Premendo CTRL+C in un campo, verrà saltata la data per quella parola.
+	  •	Per ogni parola chiave, il programma chiederà di inserire facoltativamente giorno, mese e anno.
+	  •	Premendo CTRL+C in un campo, verrà saltata la data per quella parola.
 	4.	Step 3 – Caratteri Speciali
-	•	Inserire i caratteri speciali in un’unica stringa (senza spazi).
-	•	Se il numero di caratteri speciali supera 5, il programma si fermerà.
-	•	Premendo CTRL+C in questa fase, si esce senza creare il dizionario.
+	  •	Inserire i caratteri speciali in un’unica stringa (senza spazi).
+	  •	Se il numero di caratteri speciali supera 5, il programma si fermerà.
+	  •	Premendo CTRL+C in questa fase, si esce senza creare il dizionario.
 	5.	Generazione del Dizionario
-	•	Il programma genera le varianti per ogni parola e data eventualmente fornita.
-	•	Tutte le combinazioni vengono scritte (una per riga) in password_dictionary.txt.
-	•	Al termine, un messaggio avvisa del completamento e il file conterrà il dizionario definitivo.
+	  •	Il programma genera le varianti per ogni parola e data eventualmente fornita.
+	  •	Tutte le combinazioni vengono scritte (una per riga) in password_dictionary.txt.
+	  •	Al termine, un messaggio avvisa del completamento e il file conterrà il dizionario definitivo.
 
 ## Conclusioni
 
